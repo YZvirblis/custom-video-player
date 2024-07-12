@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Custom Video Player</h1>
+      <div class="video-player">
+        <video id="video" class="video" src="sample.mp4" width="600"></video>
+        <div class="controls">
+          <button id="play" class="control-button">
+            <i class="fas fa-play">⏵</i>
+          </button>
+          <button id="pause" class="control-button">
+            <i class="fas fa-pause">⏸</i>
+          </button>
+          <button id="stop" class="control-button">
+            <i class="fas fa-stop">⏹</i>
+          </button>
+          <button id="rewind" class="control-button">
+            <i class="fas fa-backward">⏮</i>
+          </button>
+          <button id="fastForward" class="control-button">
+            <i class="fas fa-forward">⏭</i>
+          </button>
+          <input type="range" id="progress" class="progress-bar" value="0" />
+          <input
+            type="range"
+            id="volume"
+            class="volume-control"
+            min="0"
+            max="1"
+            step="0.1"
+            value="1"
+          />
+          <button id="fullscreen" class="control-button">
+            <i class="fas fa-expand">🗖</i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
